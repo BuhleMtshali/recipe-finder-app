@@ -54,3 +54,11 @@ input[type="search"]::-moz-search-clear-button {
     border: 2px solid var(--lavender);
     color: var(--lavender);
 }
+
+/* ingreadients container */
+.ingredients-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}

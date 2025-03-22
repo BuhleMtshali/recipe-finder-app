@@ -6,6 +6,10 @@
   --lavender: #BCB4FF;
 }
 
+/* *:focus{
+  outline: none;
+} */
+
 body{
   font-family: "Raleway", sans-serif;
   background-color: var(--bg-color);

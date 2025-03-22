@@ -11,6 +11,7 @@ const SearchComponent = () => {
                 <h1>Ingredients on hand:</h1>
                 <ul>
                     <li>Chicken breasts</li>
+                    <li>Oregon</li>
                 </ul>
             </div>
         </div>

@@ -7,10 +7,10 @@ const Header = () => {
        <div className="header">
             <nav>
                 <div className="nav-icon">
-                <img src="/recip-img.png" alt="recipe book" />
+                <img src="/icon.png" alt="recipe book" />
                 </div>
                 <div className="nav-text">
-                    <h1>Recipe Finder</h1>
+                <h1>Recipe Finder</h1>
                 </div>
             </nav>
        </div>

@@ -17,4 +17,5 @@ body{
   margin: auto;
   height: auto;
   border: 1px solid var(--apricot-white);
+  margin-top: 20px;
 }

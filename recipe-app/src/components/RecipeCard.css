@@ -40,15 +40,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
     cursor: pointer;
+    word-wrap: break-word;
+    gap: 5px;
 }
 
 .recipe-text p{
     font-size: 1.2rem;
     color: var(--apricot-white);
     font-weight: 500;
+    word-wrap: break-word;
 }
 
 .category{
@@ -58,4 +62,14 @@
     background-color: var(--bg-color);
     color: var(--lavender);
     font-weight: 600;
+}
+
+.recipe-text a{
+    text-decoration: none;
+    color: var(--lavender);
+    transition: all 0.2s ease-in-out;
+}
+
+.recipe-text a:hover{
+    text-decoration: underline;
 }

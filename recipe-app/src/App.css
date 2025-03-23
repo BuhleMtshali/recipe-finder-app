@@ -16,7 +16,7 @@ body{
 }
 
 .app-container{
-  max-width: 750px;
+  max-width: 730px;
   width: 100%;
   margin: auto;
   height: auto;
@@ -120,4 +120,16 @@ input[type="search"]::-moz-search-clear-button {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.empty{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.empty h2{
+  color: var(--lavender);
+  font-size: 3rem;
 }

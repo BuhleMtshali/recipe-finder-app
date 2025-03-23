@@ -63,7 +63,7 @@ function App() {
       {/* search container */}
       <div className="search-div">
       <input type="search" placeholder="e.g Salmon" id="input-search" value={searchMeal} onChange={(e) => setSearchMeal(e.target.value)}/>
-      <button id="search-btn" onClick={() => searchItems(searchMeal)}>+ Add ingredient</button>
+      <button id="search-btn" onClick={() => searchItems(searchMeal)}>Find Recipe</button>
       </div>
       {/* search container */}
 
@@ -82,7 +82,7 @@ function App() {
           </div>
         ):(
           <div className="empty">
-          <h2>No movies found</h2>
+          <h2>No recipes found</h2>
         </div>
         )}
     </div>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css';
 import Header from './components/Header';
+import RecipeCard from './components/RecipeCard';
 
 function App() {
   //useState 
@@ -39,7 +40,9 @@ function App() {
       <button id="search-btn" >+ Add ingredient</button>
       </div>
       {/* search container */}
-        
+      <div className="recipe-container">
+        <RecipeCard/>
+      </div>
       
     </div>
   )

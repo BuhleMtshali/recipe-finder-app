@@ -6,11 +6,12 @@
     border-radius: 12px;
     overflow: hidden;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+    border: 3px solid var(--lavender);
 }
 
 .recipe:hover{
     transform: scale(1.05, 1.05);
-    border: 3px solid var(--lavender);
+   
 }
 
 .recipe:hover .recipe-text{
@@ -48,4 +49,13 @@
     font-size: 1.2rem;
     color: var(--apricot-white);
     font-weight: 500;
+}
+
+.category{
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    background-color: var(--bg-color);
+    color: var(--lavender);
+    font-weight: 600;
 }

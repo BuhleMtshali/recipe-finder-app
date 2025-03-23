@@ -10,12 +10,12 @@ function App() {
 
   //useEffect hook
   useEffect(() => {
-    searchRecipes('American')
+    searchRecipes()
   }, []);
 
   //searchrecipe function
   const searchRecipes = async (recipe) => {
-    const url = `https://themealdb.p.rapidapi.com/filter.php?a=${recipe}`;
+    const url = 'https://themealdb.p.rapidapi.com/randomselection.php';
     const options = {
       method: 'GET',
       headers: {
@@ -26,6 +26,7 @@ function App() {
       const response = await fetch(url, options);
       const data = await response.json();
       console.log(data.meals);
+      setRecipes(data.meals)
   }
 
 
@@ -40,9 +41,19 @@ function App() {
       <button id="search-btn" >+ Add ingredient</button>
       </div>
       {/* search container */}
-      <div className="recipe-container">
-        <RecipeCard/>
-      </div>
+
+      {/* rendering the results */}
+        {recipes?.length > 0 ? (
+        <div className="recipe-container">
+          {recipes.map((recipe) => (
+            <RecipeCard recipe={recipe} key={recipe.idMeal}/>
+          ))}
+        </div>
+        ) : (
+          <div className="empty">
+          <h2>No movies found</h2>
+        </div>
+        )}
       
     </div>
   )
